@@ -1,0 +1,101 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0; 
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: rgb(5, 23, 116);
+}
+
+.hidden {
+  display: none;
+}
+
+button{
+  color: rgb(5, 23, 116);
+  background-color: rgb(207, 160, 90);
+  padding: 1%;
+  text-align: center;
+  font-weight: bold;
+  margin: 2%;
+}
+
+button:hover{
+  color: white;
+  cursor: pointer;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#header{
+  background-color: rgb(5, 23, 116);
+  color: rgb(207, 160, 90);
+  text-align: center;
+  padding: 4% 2%;
+  border: 2px solid white;
+  flex-basis: 100%;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+}
+
+#mainLeft, #mainCenter, #mainRight{
+  background-color: rgb(5, 23, 116);
+  color: rgb(207, 160, 90);
+  text-align: center;
+  flex-basis: 33.333%;
+  padding: 3% 2%;
+  border: 2px solid white;
+}
+
+#buttons{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 3%;
+  background-color: rgb(5, 23, 116);
+  border: 2px solid white;
+  height: max-content; 
+}
+
+#buttons *{
+  padding: 2%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media screen and (max-width: 480px) {
+  #main {
+    flex-direction: column;
+  }
+}

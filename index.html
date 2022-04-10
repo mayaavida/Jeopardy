@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Jeopardy Question Generator</title> 
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<section id="header">
+				<h1>Random Jeopardy Clue Generator</h1>
+			</section>
+		</header>
+		<section id="main">
+			<section id="mainLeft">
+				<h2>Clue:</h2>
+				<h3 id="question"></h3>
+			</section>
+			<section id="mainCenter">
+				<h2>Category:</h2>
+				<h3 id="category"></h2>
+				<h2>Value:</h2>
+				<h3 id="value"></h2>
+			</section>
+			<section id="mainRight">
+				<h2>Answer:</h2> 
+				<h3 id="answer" class="hidden"></h3>
+			</section>
+		</section>
+		<section id="buttons">
+			<button type="button" name="button" id="getAnswer">Show me the answer</button>
+			<button type="button" name="button" id="newQuestion">New question</button>
+		</section>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
