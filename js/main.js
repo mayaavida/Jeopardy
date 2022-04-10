@@ -1,4 +1,4 @@
-sdocument.querySelector('#getAnswer').addEventListener('click', showAnswer)
+document.querySelector('#getAnswer').addEventListener('click', showAnswer)
 
 function showAnswer() {
     document.querySelector('#answer').classList.toggle('hidden') 
