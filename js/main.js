@@ -6,7 +6,7 @@ function showAnswer() {
 
 
 function getFetch(){
-    fetch('http://jservice.io/api/random')
+    fetch('https://jservice.io/api/random')
         .then(res => res.json())
         .then(data => {
             console.log(data[0])
